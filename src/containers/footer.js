@@ -2,14 +2,15 @@ import React from 'react'
 import Footer from '../components/footer'
 
 export function FooterContainer() {
-    const year = new Date()
+  
     return (
         <Footer>
+                    <Footer.Horizontal></Footer.Horizontal> 
             <Footer.Wrapper>
                 <Footer.Row>
                     <Footer.Column>
                         <Footer.Title>
-                        <Footer.CwayLogo style={{ height: "60px" }} src="assets/home.svg" alt='yayay' />
+                        <Footer.CwayLogo style={{ height: "60px" }} src="assets/home.svg" alt='Logo' />
                         </Footer.Title>
                         <Footer.Link href="#"><Footer.CwayLogo style={{ height: "15px" }} src="assets/address-icon.svg" alt='address' /> Story</Footer.Link>
                         <Footer.Link href="#"><Footer.CwayLogo style={{ height: "15px" }} src="assets/callus.svg" alt='callus' /> Clients</Footer.Link>
@@ -42,28 +43,71 @@ export function FooterContainer() {
                     <Footer.Column>
                         <Footer.Title>Payment</Footer.Title>
                         <Footer.Link href="#">Wallet</Footer.Link>
-                        {/* <Footer.Link href="#"><Icon className="fab fa-facebook-f" />Wallet</Footer.Link> */}
-
                     </Footer.Column>
                     <Footer.Column>
                         <Footer.Title>App & Payment</Footer.Title>
-                        <Footer.Link href="#">Install CWAY Home App from App  <br></br>Store or Google Play </Footer.Link>
+                        <Footer.Link href="#" style={paymentpara}>Install CWAY Home App from App  <br></br>Store or Google Play </Footer.Link>
                         <Footer.Link href="#">
-                            <Footer.CwayLogo style={{ height: "30px" }} src="assets/applestore.svg" alt='yayay' />
-                            <Footer.CwayLogo style={{ height: "30px" }} src="assets/googleplay.svg" alt='yayay' />
+                            <Footer.CwayLogo style={storescard} src="assets/applestore.svg" alt='applestore' />
+                            
                         </Footer.Link>
-                        <Footer.Link href="#">Secured Payment Gateways</Footer.Link>
-                        <Footer.Link href="#"> <Footer.CwayLogo style={{height:"25px"}} src="assets/paymentmethod.svg" alt='payment' /></Footer.Link>
+                        <Footer.Link href="#">
+                            
+                            <Footer.CwayLogo style={storescard2} src="assets/googleplay.svg" alt='googleplay' />
+                        </Footer.Link>
+                        <Footer.Link href="#" style={paymentpara2}>Secured Payment Gateways</Footer.Link>
+                         <Footer.CwayLogo style={paymentcards} src="assets/paymentmethod.svg" alt='payment' />
                     </Footer.Column>
                     <Footer.Column>
-                        <Footer.Horizontal></Footer.Horizontal>
-                        <Footer.Copy>2022  <Footer.Link> CWAY Home Store </Footer.Link> - All rights reserved</Footer.Copy>
-                        
-                        
-
+                        <Footer.Horizontal></Footer.Horizontal> 
+                        <Footer.Link href="#" style={styles}>
+                             <Footer.CwayLogo  src="assets/gototop.svg" alt='gototop' />
+                        </Footer.Link>     
+                        <Footer.Copy style={styles2}>2022  <Footer.Link style={pointer} href="#"> CWAY Home Store </Footer.Link> - All rights reserved</Footer.Copy>
                     </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>
         </Footer>
     )
-}
+} 
+
+   const styles = {
+     position:"relative",
+     top:"-30px",
+     left:"1525px",
+     cursor:"pointer",
+   }
+   const styles2 = {
+     position:"relative",
+     top:"-65px",
+
+   }
+   const pointer = {  
+     cursor:"pointer",
+     color:"#5d84c1",  
+
+   }
+  
+   const paymentpara = {  
+     color:"#7e7e7e",
+   }
+   const paymentpara2 = {  
+     color:"#7e7e7e",
+     top:"-63px",
+     position:"relative",
+   }
+   const storescard = {  
+     height:"30px",
+   }
+   const storescard2 = {  
+     height:"30px",
+     left:"120px",
+     bottom:"58px",
+     paddingBottom:"0px",
+     position:"relative",
+   }
+   const paymentcards = {    
+     height:"40px",
+     bottom:"65px",
+     position:"relative",
+   }

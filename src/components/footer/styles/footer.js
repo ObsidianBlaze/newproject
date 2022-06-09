@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   padding: 80px 60px;
    background: #F5F5F5;
+   overflow:hidden;
   
   @media (max-width: 1000px) {
     padding: 70px 30px;
@@ -21,9 +22,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  // margin-left: 40px;
   width:250px;
-  // background:teal;
 `;
 
 export const Row = styled.div`
@@ -42,6 +41,7 @@ export const Link = styled.a`
   font-size: 18px;
   text-decoration: none;
   color: rgb(33,86,130);
+  width:365px;
 
   &:hover {
       color: blue;
@@ -52,26 +52,25 @@ export const Link = styled.a`
 export const Title = styled.p`
   font-size: 24px;
   color:#253d4e;
-  margin-bottom: 40px;
+  padding-top: 40px;
   font-weight: bold;
 `;
 
-export const Horizontal = styled.hr`
-  
+export const Horizontal = styled.hr` 
   margin-top:50px;
   width:1500px;
-  border:10px tin #253d4e;
+  border:1px solid #e0ebea;
 
 `;
 
 export const CwayLogo = styled.img` `;
 
 export const Copy = styled.p`
-  font-size: 14px;
+  font-size: 18px;
   color:#253d4e;
   margin-bottom: 40px;
   font-weight: bold;
-  width:350px;
+  width:380px;
 `;
 
 
