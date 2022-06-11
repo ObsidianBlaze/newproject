@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  padding: 80px 60px;
-   background: #F5F5F5;
-   overflow:hidden;
+// export const Container = styled.div`
+//   padding: 80px 60px;
+//    background: #F5F5F5;
+//    overflow:hidden;
   
-  @media (max-width: 1000px) {
-    padding: 70px 30px;
-  }
-`;
+//   @media (max-width: 1000px) {
+//     padding: 70px 30px;
+//   }
+// `;
 
 export const Wrapper = styled.div`
     display: flex;
